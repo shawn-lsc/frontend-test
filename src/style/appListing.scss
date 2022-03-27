@@ -1,0 +1,70 @@
+.appListing {
+  width: 100vw;
+  height: 75vh;
+  overflow: auto;
+
+  .item {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #80808080;
+    align-items: center;
+
+    label {
+      padding-right: 16px;
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      color: #808080;
+    }
+    img {
+      height: 80px;
+      width: 80px;
+      border: 1px solid #80808033;
+    }
+    &:nth-child(odd) {
+      img {
+        border-radius: 15px;
+      }
+    }
+    &:nth-child(even) {
+      img {
+        border-radius: 100%;
+      }
+    }
+
+    .detail {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 16px;
+      .title {
+        color: black;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .genresName {
+        color: grey;
+        font-size: 14px;
+        padding-top: 6px;
+      }
+      .ratingWrapper {
+        display: flex;
+        align-items: center;
+        .averageUserRating {
+          svg {
+            height: 14px;
+            width: 14px;
+          }
+        }
+        .userRatingCount {
+          color: #808080;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
