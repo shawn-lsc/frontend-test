@@ -1,0 +1,24 @@
+.search {
+  border-bottom: 1px solid #80808080;
+  background: #80808010;
+
+  width: 100vw;
+  height: 5vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ant-input {
+    background: #80808033;
+    width: 95vw;
+    height: 26px;
+    border: 0;
+    border-radius: 5px;
+
+    &::-webkit-input-placeholder {
+      text-align: center;
+      font-family: Arial, FontAwesome;
+    }
+  }
+}
